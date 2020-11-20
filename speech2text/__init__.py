@@ -34,7 +34,10 @@ def main(req: func.HttpRequest,context: func.Context) -> func.HttpResponse:
             )
 
 def leang_ai(file):
-    speechText = "Call service here."
+    # add your code here 
+    
+
+    speechText = "Your Result."
     return speechText
 
 def az_speech_regconite():
