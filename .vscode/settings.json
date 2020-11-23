@@ -5,5 +5,5 @@
   "azureFunctions.projectLanguage": "Python",
   "azureFunctions.projectRuntime": "~3",
   "debug.internalConsoleOptions": "neverOpen",
-  "python.pythonPath": "S:\\Users\\prakit.si.FBS-PRIKITSI\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+  "python.pythonPath": "C:\\Users\\YIT\\anaconda3\\envs\\tensorflow_1\\python.exe"
 }
