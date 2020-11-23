@@ -1,0 +1,1 @@
+https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp?pivots=programming-language-python
