@@ -1,19 +1,35 @@
+<!doctype html>
+<html>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>Upload File</h1>
-            <hr>
-            <form action="/api/speech2text" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label>Select file</label>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="file" id="file">
-                        <label class="custom-file-label" for="file">Select file...</label>
+<head>
+    <title>Upload File</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Upload File</h1>
+                <hr>
+                <form action="/api/speech2text" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Select file</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" name="file" id="file">
+                            <label class="custom-file-label" for="file">Select file...</label>
+                        </div>
                     </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Upload</button>
-            </form>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
