@@ -41,8 +41,8 @@ def main(req: func.HttpRequest,outputBlob: func.Out[func.InputStream],context: f
                 return func.HttpResponse("Abort",status_code=400)
             
             if file_ext == ".txt":
-                fl.save(os.path.join(context.function_directory, CONFIG_UPLOAD_PATH, filename))
-                with open(os.path.join(context.function_directory, CONFIG_UPLOAD_PATH, filename),"r") as fl:
+                # fl.save(os.path.join(context.function_directory, CONFIG_UPLOAD_PATH, filename))
+                # with open(os.path.join(context.function_directory, CONFIG_UPLOAD_PATH, filename),"r") as fl:
                     result = f"{filename} uploaded." + f"\n\nContent: \n{fl.read()}"
             else:    
                 savefile = os.path.join(context.function_directory, CONFIG_UPLOAD_PATH, filename)            
