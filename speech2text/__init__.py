@@ -31,6 +31,24 @@ def main(req: func.HttpRequest,outputBlob: func.Out[func.InputStream],context: f
                     ,status_code=200
                 )
             
+            uploadPath = os.path.join(context.function_directory, CONFIG_UPLOAD_PATH)
+            try:
+                # os.rmdir(uploadPath)
+                os.makedirs(uploadPath)
+            except OSError:
+                print ("Creation of the directory %s failed" % uploadPath)
+            else:
+                print ("Successfully created the directory %s" % uploadPath)
+
+            resultPath = os.path.join(context.function_directory, CONFIG_RESULT_PATH)
+            try:
+                # os.rmdir(resultPath)
+                os.makedirs(resultPath)
+            except OSError:
+                print ("Creation of the directory %s failed" % resultPath)
+            else:
+                print ("Successfully created the directory %s" % resultPath)
+
             # outputBlob.set(fl.read())
             # input = outputBlob.get().uri
             # #input = outputBlob.get()   
