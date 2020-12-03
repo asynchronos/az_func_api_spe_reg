@@ -85,7 +85,7 @@ def leang_ai(filename, outfile):
 
     # Creates an instance of a speech config with specified subscription key and service region.
     # Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
-    speech_key, service_region = "53670c8c8ad14415863b7206bbccb48c", "eastus"
+    speech_key, service_region = os.environ["SPEECH_KEY"], os.environ["SERVICE_REGION"]
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
     # Creates an audio configuration that points to an audio file.
